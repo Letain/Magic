@@ -60,7 +60,7 @@ class CartsController < ApplicationController
     respond_to do |format|
       #format.html { redirect_to carts_url, notice: 'Cart was successfully destroyed.' }
       #format.json { head :no_content }
-      format.html { redirect_to store_index_url, notice: 'Your cart is currently empty'}
+      format.html { redirect_to store_index_url}
       format.json { head :no_content }
     end
   end
